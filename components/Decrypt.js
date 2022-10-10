@@ -43,7 +43,7 @@ export default function Decrypt() {
         <div>
             <p>Utility di decriptazione v0.1.2</p>
             <p>Proprietà esclusiva del Centro Studi Paranormali</p>
-            <p>L'uso non autorizzato è punibile ai sensi dell'art. ███ del C.P. e dell'art. ██ dello Statuto del CSP.</p>
+            <p>L&apos;uso non autorizzato è punibile ai sensi dell&apos;art. ███ del C.P. e dell&apos;art. ██ dello Statuto del CSP.</p>
             <p>Inserire la chiave di decriptazione:</p>
             <form onSubmit={decrypt}>
                 <input type="text" className="textbox" />

@@ -1,6 +1,6 @@
 
 
-export default function() {
+export default function Home() {
     return (
         <div>
             <p>Nome utente: doctusk</p>

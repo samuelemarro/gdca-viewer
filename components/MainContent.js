@@ -34,7 +34,7 @@ export default function MainContent() {
                         <div className="d-flex flex-sm-column flex-row flex-nowrap align-items-center sticky-top">
                             {
                                 filenames.map((name, index) => (
-                                    <a className={"unstyled file p-1 " + (index == filenameIndex ? ' selected' : '')} onClick={() => setFilenameIndex(index)}>{name}</a>
+                                    <a className={"unstyled file p-1 " + (index == filenameIndex ? ' selected' : '')} key={index} onClick={() => setFilenameIndex(index)}>{name}</a>
                                 ))
                             }
                         </div>

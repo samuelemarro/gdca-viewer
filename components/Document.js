@@ -33,7 +33,7 @@ export default function Document({name, crypted, content, extra}) {
             finalString = str
         }
 
-        return finalString.split('\n').map(s => <p>{s || <br/>}</p>)
+        return finalString.split('\n').map((str, i) => <p key={i}>{str || <br/>}</p>)
     }
 
     return (

@@ -111,7 +111,7 @@ export default function Terminal() {
         <div>
             <div className="hide-scrollbar" ref={scrolling} style={{overflow: 'scroll', height: '80vh'}}>
                 {
-                    lines.map(l => <p>{l}</p>)
+                    lines.map((l, i) => <p key={i}>{l}</p>)
                 }
             </div>
             <form onSubmit={write}>
