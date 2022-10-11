@@ -21,8 +21,22 @@ const packagesState = atom({
     effects_UNSTABLE: [persistAtom]
 })
 
+const versionState = atom({
+    key: 'version',
+    default: 1,
+    effects_UNSTABLE: [persistAtom]
+})
+
+const trackingState = atom({
+    key: 'tracking',
+    default: null,
+    effects_UNSTABLE: [persistAtom]
+})
+
 export {
     loggedInState,
     secretsState,
-    packagesState
+    packagesState,
+    trackingState,
+    versionState
 }
