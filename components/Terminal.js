@@ -31,7 +31,9 @@ export default function Terminal() {
         // console.log(scrolling)
         // console.log(scrolling.current.scrollTop)
         setTimeout(() => {
-            scrolling.current.scrollTop = scrolling.current.scrollHeight + 1000
+            if (scrolling?.current?.scrollTop) {
+                scrolling.current.scrollTop = scrolling.current.scrollHeight + 1000
+            }
         }, 10)
         
     }
@@ -94,7 +96,7 @@ export default function Terminal() {
                     print('Stato pacco: CONSEGNATO')
                     print('Indirizzo: Piazza Puntoni 1/B, 40126 Bologna (BO)')
                     print('Alias utilizzato: ' + process.env.NEXT_PUBLIC_DELIVERY_ALIAS)
-                    print('Note: Consegnato in portineria.')
+                    print('Note: Consegnato in portineria. Ritiro non ancora effettuato.')
                 } else {
                     print('ID pacco non riconosciuto')
                 }

@@ -16,6 +16,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <link rel="shortcut icon" href="/favicon.svg" />
+        <title>Database CSP</title>
       </Head>
       <Component {...pageProps} />
     </>

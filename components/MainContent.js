@@ -6,17 +6,19 @@ import Document from "./Document"
 import Home from "./Home"
 import Terminal from "./Terminal"
 import aiuto from "../assets/json/aiuto.json"
+import csp5375 from "../assets/json/csp5375.json"
 import { useRecoilState } from "recoil"
 import { secretsState } from "../common/data"
 
 export default function MainContent() {
-    const [filenames, setFilenames] = useState(['home', 'cds.txt', 'report001.txt', 'report002.txt', 'report003.txt', 'report004.txt', 'report005.txt', 'report006.txt', 'report007.txt', 'aiuto.txt', 'decrypt.sh', 'terminal'])
+    const [filenames, setFilenames] = useState(['home', 'csp5375.txt', 'cds.txt', 'report001.txt', 'report002.txt', 'report003.txt', 'report004.txt', 'report005.txt', 'report006.txt', 'report007.txt', 'aiuto.txt', 'decrypt.sh', 'terminal'])
     const [filenameIndex, setFilenameIndex] = useState(0)
     const [secrets, setSecrets] = useRecoilState(secretsState)
 
     const [files, setFiles] = useState({
         'decrypt.sh' : <Decrypt />,
         'home' : <Home />,
+        'csp5375.txt' : <Document name='csp5375.txt' {...csp5375} />,
         'cds.txt' : <CdS />,
         'aiuto.txt' : <Document name="aiuto.txt" {...aiuto}/>,
         'report001.txt' : <Document name="report001.txt" crypted/>,
@@ -28,10 +30,12 @@ export default function MainContent() {
         'report007.txt' : <Document name="report007.txt" crypted/>,
         'terminal' : <Terminal />,
     })
+    let actualFilenames = [...filenames]
+    let actualFiles = {...files}
 
     if (secrets['annuncio.txt']) {
-        filenames.push('annuncio.txt')
-        files['annuncio.txt'] = <Document name="annuncio.txt" crypted />
+        actualFilenames.push('annuncio.txt')
+        actualFiles['annuncio.txt'] = <Document name="annuncio.txt" crypted />
     }
 
 
@@ -46,7 +50,7 @@ export default function MainContent() {
                     <div className="col-sm-auto sticky-top">
                         <div id="filesContainer" className="d-flex flex-sm-column flex-row align-items-center sticky-top flex-wrap">
                             {
-                                filenames.map((name, index) => (
+                                actualFilenames.map((name, index) => (
                                     <a className={"w-auto file p-1 " + (index == filenameIndex ? ' selected' : '')} key={index} onClick={() => setFilenameIndex(index)}>{name}</a>
                                 ))
                             }
@@ -54,10 +58,10 @@ export default function MainContent() {
                     </div>
                     <div className="col-sm p-3 min-vh-100 hide-scrollbar" style={{overflowY: "scroll", height: "200px", width: "60vw", margin: "auto"}}>
                     {
-                        files[filenames[filenameIndex]]
+                        actualFiles[actualFilenames[filenameIndex]]
                     }
-                    </div>
                     <div style={{height: '200px'}} />
+                    </div>
                 </div>
             </div>
         </div>
