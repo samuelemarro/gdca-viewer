@@ -28,8 +28,8 @@ export default function Terminal() {
             newLines.reverse()
             setLines(newLines)
         }*/
-        console.log(scrolling)
-        console.log(scrolling.current.scrollTop)
+        // console.log(scrolling)
+        // console.log(scrolling.current.scrollTop)
         setTimeout(() => {
             scrolling.current.scrollTop = scrolling.current.scrollHeight + 1000
         }, 10)
@@ -53,6 +53,7 @@ export default function Terminal() {
             print('delitrack : Traccia la consegna di pacchi CSP')
             print('list : Fornisce la lista di comandi disponibili')
             print('phrase : Stampa la frase identificativa dell\'utente')
+            print('status : Stampa lo stato dell\'account utente.')
         } else if (args[0] == 'cpm') {
             try {
                 const packageName = args[1]
@@ -78,12 +79,12 @@ export default function Terminal() {
             }
         } else if (args[0] == 'phrase') {
             print('Errore: il recupero digitale della frase identificativa è stato disabilitato.')
-            print('La frase identificativa è presente sul badge fisico.')
+            print('Si ricorda che la frase identificativa è anche sul retro del badge CSP.')
         } else if (args[0] == 'delitrack') {
-            console.log('ID Pacco:', process.env.NEXT_PUBLIC_DELIVERY_ID)
+            // console.log('ID Pacco:', process.env.NEXT_PUBLIC_DELIVERY_ID)
             try {
                 const packageCode = args[1]
-                console.log('Current packageCode:', packageCode)
+                // console.log('Current packageCode:', packageCode)
 
                 if (packageCode === undefined) {
                     throw new Error()
@@ -93,6 +94,7 @@ export default function Terminal() {
                     print('Stato pacco: CONSEGNATO')
                     print('Indirizzo: Piazza Puntoni 1/B, 40126 Bologna (BO)')
                     print('Alias utilizzato: ' + process.env.NEXT_PUBLIC_DELIVERY_ALIAS)
+                    print('Note: Consegnato in portineria.')
                 } else {
                     print('ID pacco non riconosciuto')
                 }
@@ -102,6 +104,12 @@ export default function Terminal() {
                 print('dove l\'ID è un numero univoco a 8 cifre')
                 print('Per esempio, "delitrack 12345678" (senza virgolette) traccia il pacco con ID 12345678.')
             }
+        } else if (args[0] == 'status') {
+            print('Nome utente: doctusk')
+            print('Livello autorizzazione: 71')
+            print('Sede di riferimento: ███████████')
+            print('Divisione: Ricerca')
+            print('Stato: M.I.A.')
         } else {
             print('Comando non riconosciuto.')
         }
@@ -115,8 +123,8 @@ export default function Terminal() {
                 }
             </div>
             <form onSubmit={write}>
-                <div style={{width: "100%"}}>
-                    <input type="text" className="textbox" value={input} onChange={e => setInput(e.target.value)} style={{width: '1fr'}}/>
+                <div className="d-flex" style={{width: "100%"}}>
+                    <input type="text" className="textbox flex-fill" value={input} onChange={e => setInput(e.target.value)} style={{width: '1fr'}}/>
                     <button type="submit">Invio</button>
 
                 </div>
