@@ -114,7 +114,7 @@ export default function Terminal() {
             print('Divisione: Ricerca')
             print('Stato: M.I.A.')
         } else if (args[0] == 'helpdesk') {
-            print('Helpdesk AI disattivato per direttiva della Divisione Amministrativa n. ███')
+            print('Helpdesk A.I. disattivato per direttiva della Divisione Amministrativa n. ███')
             print('È possibile contattare un operatore umano di livello autorizzazione non inferiore a 15 a un indirizzo email anonimo')
             print('Email per il mese corrente:')
             print('desk458102283@proton.me')
