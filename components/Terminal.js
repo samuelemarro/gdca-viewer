@@ -53,6 +53,7 @@ export default function Terminal() {
             // print('access-db : permette di verificare gli accessi eseguiti al database')
             print('cpm : CSP Package Manager, permette di aggiungere funzionalità al database')
             print('delitrack : Traccia la consegna di pacchi CSP')
+            print('helpdesk : Fornisce istruzioni per contattare l\'help desk')
             print('list : Fornisce la lista di comandi disponibili')
             print('phrase : Stampa la frase identificativa dell\'utente')
             print('status : Stampa lo stato dell\'account utente')
@@ -112,6 +113,11 @@ export default function Terminal() {
             print('Sede di riferimento: ███████████')
             print('Divisione: Ricerca')
             print('Stato: M.I.A.')
+        } else if (args[0] == 'helpdesk') {
+            print('Helpdesk AI disattivato per direttiva della Divisione Amministrativa n. ███')
+            print('È possibile contattare un operatore umano di livello autorizzazione non inferiore a 15 a un indirizzo email anonimo')
+            print('Email per il mese corrente:')
+            print('desk458102283@proton.me')
         } else {
             print('Comando non riconosciuto.')
         }
@@ -121,7 +127,7 @@ export default function Terminal() {
         <div>
             <div className="hide-scrollbar" ref={scrolling} style={{overflow: 'scroll', height: '80vh'}}>
                 {
-                    lines.map((l, i) => <p key={i}>{l}</p>)
+                    lines.map((l, i) => <p className={l.includes('@') ? 'noUppercase' : ''} key={i}>{l}</p>)
                 }
             </div>
             <form onSubmit={write}>
