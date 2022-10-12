@@ -37,6 +37,7 @@ export default function Document({name, crypted, content, extra}) {
             return 'Impossibile caricare il file.'
         }
         finalString = finalString.replace('5305', '5375')
+        finalString = finalString.replace('assicurato', 'assicurata')
 
         return finalString.split('\n').map((str, i) => <p className={str.includes('https') ? 'noUppercase' : ''} key={i}>{str || <br/>}</p>)
     }
