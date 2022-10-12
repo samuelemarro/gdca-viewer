@@ -53,7 +53,7 @@ export default function Terminal() {
             print('delitrack : Traccia la consegna di pacchi CSP')
             print('list : Fornisce la lista di comandi disponibili')
             print('phrase : Stampa la frase identificativa dell\'utente')
-            print('status : Stampa lo stato dell\'account utente.')
+            print('status : Stampa lo stato dell\'account utente')
         } else if (args[0] == 'cpm') {
             try {
                 const packageName = args[1]
