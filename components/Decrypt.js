@@ -51,6 +51,7 @@ export default function Decrypt() {
                 <input type="text" className="textbox" value={key} onChange={e => setKey(e.target.value)} />
                 <button type="submit">Avvia</button>
             </form>
+            {tracking == 'BCIC' ? <p>Stufato di fare bruteforce? :)</p> : null}
             <p>{message}</p>
         </div>
     )
