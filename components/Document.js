@@ -22,7 +22,7 @@ export default function Document({name, crypted, content, extra}) {
 
         return total
     }
-    console.log(secrets)
+    // console.log(secrets)
 
     const thorusWrapped = (str) => {
         const actualExtra = extra || secrets[name]?.extra
