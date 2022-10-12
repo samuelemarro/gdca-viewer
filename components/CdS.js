@@ -11,7 +11,7 @@ export default function CdS () {
             </p>
             <p>
                 L&apos;organizzatore del Collegio di Sangue non è a conoscenza della motivazione per cui alcuni collegiali abbiano diritto a questo
-                beneficio. Si ricorda quindi che rivelare la propria identità come membro del CSP comporta la terminazione immediata e l&apos;avvio di
+                beneficio. Si ricorda quindi che rivelare la propria identità come membro del CSP comporta l&apos;avvio di
                 un&apos;istanza ai sensi dell&apos;art. ███ del codice del CSP.
             </p>
             <p>
