@@ -5,9 +5,9 @@ export default function CdS () {
             <p>
                 Attenzione: al fine di massimizzare l&apos;integrazione degli agenti CSP con il Collegio Superiore Irnerio, la Divisione Amministrativa
                 ha approvato un sistema di immunità qualificata all&apos;interno delle attività di Collegio. In particolare, è ora possibile ottenere
-                l&apos;immunità nell'attività collegiale "Collegio di Sangue" per le prime 12 ore dall&apos;inizio del gioco. Per far ciò, è necessario
+                l&apos;immunità nell&apos;attività collegiale &quot;Collegio di Sangue&quot; per le prime 12 ore dall&apos;inizio del gioco. Per far ciò, è necessario
                 contattare l&apos;organizzatore del Collegio di Sangue in modo da riferire la volontà di usufruire di questo bonus assicurandosi di usare
-                la parola chiave "MOAB".
+                la parola chiave &quot;MOAB&quot;.
             </p>
             <p>
                 L&apos;organizzatore del Collegio di Sangue non è a conoscenza della motivazione per cui alcuni collegiali abbiano diritto a questo
