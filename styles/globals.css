@@ -953,9 +953,17 @@ button {
   text-transform: uppercase !important;
 }
 
-.textbox {
+.textbox,.textbox:focus,.textbox:active {
   background-color: var(--bg);
   border-color: var(--color);
   color: var(--color);
   text-transform: uppercase;
+}
+
+.d-flex {
+  display: block !important;
+}
+
+#filesContainer {
+  width: 100%;
 }
