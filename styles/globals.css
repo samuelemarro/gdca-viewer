@@ -967,3 +967,7 @@ button {
 #filesContainer {
   width: 100%;
 }
+
+.noUppercase {
+  text-transform: none !important
+}
