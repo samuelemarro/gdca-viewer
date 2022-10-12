@@ -33,6 +33,10 @@ export default function Document({name, crypted, content, extra}) {
             finalString = str
         }
 
+        if (!finalString) {
+            return 'Impossibile caricare il file.'
+        }
+
         return finalString.split('\n').map((str, i) => <p key={i}>{str || <br/>}</p>)
     }
 
