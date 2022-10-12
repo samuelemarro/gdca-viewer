@@ -1,12 +1,13 @@
 import { useState } from "react"
 import { useRecoilState } from "recoil"
 
-import { secretsState } from "../common/data"
+import { secretsState, trackingState } from "../common/data"
 
 export default function Decrypt() {
     const [message, setMessage] = useState('')
     const [key, setKey] = useState('')
     const [secrets, setSecrets] = useRecoilState(secretsState)
+    const [tracking, setTracking] = useRecoilState(trackingState)
 
     const decrypt = async (e) => {
         e.preventDefault()
@@ -23,7 +24,8 @@ export default function Decrypt() {
                     }
                 })
             }, 1000)
-            const res = await fetch('/api/decrypt?key=' + key).then(r => r.json());
+            // console.log('Key:', key)
+            const res = await fetch('/api/decrypt?key=' + key + '&tracking=' + tracking).then(r => r.json());
             if (res.success) {
                 if (secrets[res.filename]) {
                     setMessage('File ' + res.filename + ' già decriptato.')
@@ -46,7 +48,7 @@ export default function Decrypt() {
             <p>L&apos;uso non autorizzato è punibile ai sensi dell&apos;art. ███ del C.P. e dell&apos;art. ██ dello Statuto del CSP.</p>
             <p>Inserire la chiave di decriptazione:</p>
             <form onSubmit={decrypt}>
-                <input type="text" className="textbox" />
+                <input type="text" className="textbox" value={key} onChange={e => setKey(e.target.value)} />
                 <button type="submit">Avvia</button>
             </form>
             <p>{message}</p>
