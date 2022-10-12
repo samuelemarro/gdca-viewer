@@ -39,7 +39,7 @@ export default async function handler(req, res) {
         key = key.toLowerCase().trim()
     }
     if (req.query?.tracking == 'BCIC') {
-        await answer({success: false}, req, res)
+        await answer({success: false})
         return
     }
     const matchingFile = getMatchingFile(key)
