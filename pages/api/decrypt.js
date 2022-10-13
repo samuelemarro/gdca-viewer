@@ -10,7 +10,7 @@ const server = dev ? 'http://localhost:3000' : 'https://csp-database.vercel.app'
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
 const answer = async (response, req, res) => {
-    await delay(5000)
+    // await delay(5000)
     console.log('Success: ', response.success)
     res.status(200).json(response)
 }
