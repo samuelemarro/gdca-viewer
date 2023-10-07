@@ -113,7 +113,7 @@
         "range": 2,
         "urge" : 0
     },
-    "nl" : {
+    "nt" : {
         "position" : "K10",
         "health": 3,
         "range": 2,
@@ -168,31 +168,25 @@
         "urge" : 0
     },
     "gl" : {
-        "position" : "B17",
+        "position" : "C16",
         "health": 3,
         "range": 2,
         "urge" : 0
     },
     "gc" : {
-        "position" : "D16",
+        "position" : "F16",
         "health": 3,
         "range": 2,
         "urge" : 0
     },
     "ag" : {
-        "position" : "G17",
+        "position" : "I16",
         "health": 3,
         "range": 2,
         "urge" : 0
     },
     "gb" : {
-        "position" : "J16",
-        "health": 3,
-        "range": 2,
-        "urge" : 0
-    },
-    "nt" : {
-        "position" : "L17",
+        "position" : "L16",
         "health": 3,
         "range": 2,
         "urge" : 0

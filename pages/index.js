@@ -61,7 +61,7 @@ function PageContent() {
 
     // The day display must be on the right
 
-    const width = 18
+    const width = 17
     const height = 13
 
     const canGoLeft = day > 1
