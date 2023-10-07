@@ -2,166 +2,199 @@
     "gr" : {
         "position" : "B2",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "lm" : {
         "position" : "E2",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "mp" : {
         "position" : "H2",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "fs" : {
         "position" : "K2",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "mt" : {
         "position" : "C4",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "sa" : {
         "position" : "F4",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "ex" : {
         "position" : "I4",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "ep" : {
         "position" : "L4",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "ea" : {
         "position" : "B6",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "rx" : {
         "position" : "E6",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "lr" : {
         "position" : "H6",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "lg" : {
         "position" : "K6",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "tm" : {
         "position" : "C8",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "sf" : {
         "position" : "F8",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "dv" : {
         "position" : "I8",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "rf" : {
         "position" : "L8",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "jf" : {
         "position" : "B10",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "gm" : {
         "position" : "E10",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "gz" : {
         "position" : "H10",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "nl" : {
         "position" : "K10",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "as" : {
         "position" : "C12",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "ai" : {
         "position" : "F12",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "ab" : {
         "position" : "I12",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "ml" : {
         "position" : "L12",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "er" : {
         "position" : "B14",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "sk" : {
         "position" : "E14",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "mf" : {
         "position" : "H14",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "gn" : {
         "position" : "K14",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "gl" : {
         "position" : "B17",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "gc" : {
         "position" : "D16",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "ag" : {
         "position" : "G17",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "gb" : {
         "position" : "J16",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     },
     "nt" : {
         "position" : "L17",
         "health": 3,
-        "range": 2
+        "range": 2,
+        "urge" : 0
     }
 }

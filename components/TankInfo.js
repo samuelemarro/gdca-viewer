@@ -31,6 +31,13 @@ export default function TankInfo({ tank, setTank }) {
                     '\u00A0'
                 }
             </p>
+            <p className="info">
+                {
+                    tank?.range ?
+                    'Urgio: ' + (tank?.urge) :
+                    '\u00A0'
+                }
+            </p>
         </div>
     )
 }

@@ -53,24 +53,11 @@ function PageContent() {
             parsedContent[row][column].id = id
             parsedContent[row][column].health = content[id].health
             parsedContent[row][column].range = content[id].range
+            parsedContent[row][column].urge = content[id].urge
         }
 
         return parsedContent
     }
-
-    const contentData = {
-        ea: {
-            position: 'F3',
-            health: 3,
-            range: 2
-        },
-        gb: {
-            position: 'A2',
-            health: 3,
-            range: 2
-        },
-    }
-
 
     // The day display must be on the right
 
