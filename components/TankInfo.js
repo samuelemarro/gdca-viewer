@@ -20,14 +20,14 @@ export default function TankInfo({ tank, setTank }) {
             <p className="info">
                 {
                     tank?.range ?
-                    'Raggio d\'azione: ' + tank?.range :
+                    'Raggio di azione: ' + tank?.range :
                     '\u00A0'
                 }
             </p>
             <p className="info">
                 {
                     tank?.range ?
-                    'Raggio del cannone: ' + (tank?.range - 1) :
+                    'Raggio di fuoco: ' + (tank?.range - 1) :
                     '\u00A0'
                 }
             </p>
