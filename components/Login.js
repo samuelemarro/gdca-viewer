@@ -28,7 +28,9 @@ export default function Login({setLoggedIn}) {
     }
     return (
         <form onSubmit={checkPassword} style={{position: "fixed", left: "50%", top: "50%", transform: "translate(-50%, -50%)"}}>
-            <p>Username: doctusk</p>
+            <p>Buongiorno collegiale! Ha già configurato il suo carro armato?</p>
+            <button>Sì</button>
+            <button>No</button>
             <p>Password: <input type="password" value={password} onChange={e => setPassword(e.target.value)} className="textbox" /></p>
             <button type="submit">Login</button>
             <p>{message}</p>

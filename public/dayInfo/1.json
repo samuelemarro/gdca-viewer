@@ -1,0 +1,167 @@
+{
+    "gr" : {
+        "position" : "B2",
+        "health": 3,
+        "range": 2
+    },
+    "lm" : {
+        "position" : "E2",
+        "health": 3,
+        "range": 2
+    },
+    "mp" : {
+        "position" : "H2",
+        "health": 3,
+        "range": 2
+    },
+    "fs" : {
+        "position" : "K2",
+        "health": 3,
+        "range": 2
+    },
+    "mt" : {
+        "position" : "C4",
+        "health": 3,
+        "range": 2
+    },
+    "sa" : {
+        "position" : "F4",
+        "health": 3,
+        "range": 2
+    },
+    "ex" : {
+        "position" : "I4",
+        "health": 3,
+        "range": 2
+    },
+    "ep" : {
+        "position" : "L4",
+        "health": 3,
+        "range": 2
+    },
+    "ea" : {
+        "position" : "B6",
+        "health": 3,
+        "range": 2
+    },
+    "rx" : {
+        "position" : "E6",
+        "health": 3,
+        "range": 2
+    },
+    "lr" : {
+        "position" : "H6",
+        "health": 3,
+        "range": 2
+    },
+    "lg" : {
+        "position" : "K6",
+        "health": 3,
+        "range": 2
+    },
+    "tm" : {
+        "position" : "C8",
+        "health": 3,
+        "range": 2
+    },
+    "sf" : {
+        "position" : "F8",
+        "health": 3,
+        "range": 2
+    },
+    "dv" : {
+        "position" : "I8",
+        "health": 3,
+        "range": 2
+    },
+    "rf" : {
+        "position" : "L8",
+        "health": 3,
+        "range": 2
+    },
+    "jf" : {
+        "position" : "B10",
+        "health": 3,
+        "range": 2
+    },
+    "gm" : {
+        "position" : "E10",
+        "health": 3,
+        "range": 2
+    },
+    "gz" : {
+        "position" : "H10",
+        "health": 3,
+        "range": 2
+    },
+    "nl" : {
+        "position" : "K10",
+        "health": 3,
+        "range": 2
+    },
+    "as" : {
+        "position" : "C12",
+        "health": 3,
+        "range": 2
+    },
+    "ai" : {
+        "position" : "F12",
+        "health": 3,
+        "range": 2
+    },
+    "ab" : {
+        "position" : "I12",
+        "health": 3,
+        "range": 2
+    },
+    "ml" : {
+        "position" : "L12",
+        "health": 3,
+        "range": 2
+    },
+    "er" : {
+        "position" : "B14",
+        "health": 3,
+        "range": 2
+    },
+    "sk" : {
+        "position" : "E14",
+        "health": 3,
+        "range": 2
+    },
+    "mf" : {
+        "position" : "H14",
+        "health": 3,
+        "range": 2
+    },
+    "gn" : {
+        "position" : "K14",
+        "health": 3,
+        "range": 2
+    },
+    "gl" : {
+        "position" : "B17",
+        "health": 3,
+        "range": 2
+    },
+    "gc" : {
+        "position" : "D16",
+        "health": 3,
+        "range": 2
+    },
+    "ag" : {
+        "position" : "G17",
+        "health": 3,
+        "range": 2
+    },
+    "gb" : {
+        "position" : "J16",
+        "health": 3,
+        "range": 2
+    },
+    "nt" : {
+        "position" : "L17",
+        "health": 3,
+        "range": 2
+    }
+}

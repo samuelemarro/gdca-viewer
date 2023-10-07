@@ -280,8 +280,8 @@ a {
  /*********** VARIABLES *************/
  
  :root {
-   --green-color: #99b3f9;
-   --green-bg: #050632;
+   --green-color: #b2f999;
+   --green-bg: #061702;
    --red-color: #c0100a;
    --red-bg: #1b0302;
    --blue-color: #a5a5ff;
@@ -970,4 +970,40 @@ button {
 
 .noUppercase {
   text-transform: none !important
+}
+
+.iconSelector {
+  font-size: 3em;
+}
+
+th, td {
+  border: 1px solid;
+}
+
+table {
+  empty-cells: show;
+  border-collapse: collapse;
+  border: 1px solid;
+  table-layout: fixed;
+}
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.info {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.centerText {
+  text-align: center;
+}
+
+p, a, span, td {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }

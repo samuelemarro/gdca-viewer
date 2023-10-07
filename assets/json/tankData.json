@@ -1,0 +1,167 @@
+{
+    "ea" : {
+        "name" : "Ermanno",
+        "surname": "Abbate",
+        "tank" : "Cifali Viaggi Confindustria \"Pongo\""
+    },
+    "gb" : {
+        "name" : "Ginevra",
+        "surname": "Barbato",
+        "tank" : "Mastrolindo Terminator1234 \"Put(a)in\""
+    },
+    "ab" : {
+        "name" : "Alessandro",
+        "surname": "Burzacchini",
+        "tank" : "Holy Britannian Empire Guren \"The Demon Emperor\""
+    },
+    "gc" : {
+        "name" : "Giulia",
+        "surname": "Cicogna",
+        "tank" : "Ford Mustang \"Cavallo Selvaggio\""
+    },
+    "sa" : {
+        "name" : "Simone",
+        "surname": "De Angelis",
+        "tank" : "Henschel & Sohn Panzer VI Tiger II \"My Little Panzer(kampfwagen)\""
+    },
+    "gm" : {
+        "name" : "Gabriele",
+        "surname" : "De Marco",
+        "tank" : "Paradiso della Brugola Ringhio Garpanzer Figlio di Kmer \"Cassaragnu Armato Baracca\""
+    },
+    "mp" : {
+        "name" : "Matilde",
+        "surname" : "Di Piazza",
+        "tank" : "Reptilia Cocodrylus Niloticus \"Cocco\""
+    },
+    "rf" : {
+        "name" : "Riccardo",
+        "surname" : "Fabbri",
+        "tank" : "DAK Panzer III \"Wüstenfuchs\""
+    },
+    "jf" : {
+        "name" : "Jacopo",
+        "surname" : "Fantini",
+        "tank" : "Hephaestus S.p.A. Lambda 300 \"Leonidas\""
+    },
+    "sf" : {
+        "name" : "Samuele",
+        "surname" : "Fogacci",
+        "tank" : "Mira Mirachu \"Pikka\""
+    },
+    "mf" : {
+        "name" : "Matteo",
+        "surname" : "Fornaini",
+        "tank" : "idgenoessische Konstruktionswerkstaette CV9030CH \"Orwelli\""
+    },
+    "rx" : {
+        "name" : "Riccardo",
+        "surname" : "Franchi",
+        "tank" : "F.S. E.652 \"Annuncio Ritardo\""
+    },
+    "lg" : {
+        "name" : "Ludovica",
+        "surname" : "Geraci",
+        "tank" : "Lugol L'Uomo Focaccina 2000 \"Scapolottina Numero 3\""
+    },
+    "ag" : {
+        "name" : "Andrea",
+        "surname" : "Giacomelli",
+        "tank" : "Mattel Patriarcato \"Cavallino\""
+    },
+    "ai" : {
+        "name" : "Andrea",
+        "surname" : "Iacco",
+        "tank" : "Anschluss-Niemiecki Ltd. Omsk MDCCCXII \"Doomii\""
+    },
+    "sk" : {
+        "name" : "Safouane",
+        "surname" : "Khemiri",
+        "tank" : "Daimler-Benz Panzerkampfwagen III \"Barbenheimer\""
+    },
+    "gl" : {
+        "name" : "Giancarlo",
+        "surname" : "Leonetti",
+        "tank" : "Un Abile Artigiano & Soci CNGXLN15 \"Ilci Ilcinghiale\""
+    },
+    "ml" : {
+        "name" : "Matteo",
+        "surname" : "Di Lorenzo",
+        "tank" : "Panificio Cassano (Bari) Panzer VIII \"Cotto e Mozzarella\""
+    },
+    "dv" : {
+        "name" : "Daniele",
+        "surname" : "Venturi",
+        "tank" : "Lego Blocchetto Singolo \"Quello Che Fa Male Se Lo Calpesti\""
+    },
+    "nl" : {
+        "name" : "Nicola",
+        "surname" : "Leonetti",
+        "tank" : "Besughi srl M1A2 SEP Abrams \"Gabibba Ti prego lasciami almeno vedere i bambini, sono anche figli miei Cristo Santo"
+    },
+    "tm" : {
+        "name" : "Tommaso",
+        "surname" : "Malpensa",
+        "tank" : "Московский государственный металлургический комбинат «Маршал Жуков» Штурмовой Танк-34-85 \"Немного хорошо\""
+    },
+    "lm" : {
+        "name" : "Lucio",
+        "surname" : "Meola",
+        "tank" : "Sinnoh PS349 \"Probotank\""
+    },
+    "gn" : {
+        "name" : "Giuliano",
+        "surname" : "Nigro",
+        "tank" : "Arasaka Sandevistan Tank Type Series II \"Corridore sullo Spigolo\""
+    },
+    "ex" : {
+        "name" : "Elisa",
+        "surname" : "Pick",
+        "tank" : "Bloch Builders Serenade Strong \"Il Ballerino\""
+    },
+    "ep" : {
+        "name" : "Elia",
+        "surname" : "Pilati",
+        "tank" : "La Crew.sca Carro Lavisano da Carnevale Classico \"Bamba di Legno\""
+    },
+    "gr" : {
+        "name" : "Giorgio Germano",
+        "surname" : "Ravina",
+        "tank" : "RaiGulp Sturmpanzerwagen Oberschlesien VIII \"L'amicizia è magica\""
+    },
+    "lr" : {
+        "name" : "Lorenzo",
+        "surname" : "Rizzi",
+        "tank" : "TeamRocket Industry DUG02 \"DuggyBoy\""
+    },
+    "er" : {
+        "name" : "Emanuele",
+        "surname" : "Rosini",
+        "tank" : "Coop Alleanza 3.0 Fiorfiore 1729AT \"Ornella\""
+    },
+    "as" : {
+        "name" : "Alisea",
+        "surname" : "Succi",
+        "tank" : "Baldoni Iron Industries Graziella Brutalwagen 1 \"Touhou\""
+    },
+    "fs" : {
+        "name" : "Francesco Prem",
+        "surname" : "Solidoro",
+        "tank" : "They/Them Artilley WWCT23 \"TOK\""
+    },
+    "mt" : {
+        "name" : "Matteo",
+        "surname" : "Trivisonno",
+        "tank" : "Industrie Memetiche Italiane PCNJ \"TriviTank\""
+    },
+    "nt" : {
+        "name" : "Nicola",
+        "surname" : "Turbian",
+        "tank" : "FIAT Panda 4x4 V8 Benzina \"Carro Amico Ti Schivo\""
+    },
+    "gz" : {
+        "name" : "Giovanni",
+        "surname" : "Zotti",
+        "tank" : "Zavod KV2 \"Le Velineee\""
+    }
+}
