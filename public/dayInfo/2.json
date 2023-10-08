@@ -1,0 +1,194 @@
+{
+    "gr" : {
+        "position" : "B3",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "lm" : {
+        "position" : "D3",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "mp" : {
+        "position" : "H3",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "fs" : {
+        "position" : "J3",
+        "health": 3,
+        "range": 2,
+        "urge" : 0
+    },
+    "mt" : {
+        "position" : "C5",
+        "health": 1,
+        "range": 2,
+        "urge" : 0
+    },
+    "sa" : {
+        "position" : "G5",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "ex" : {
+        "position" : "J5",
+        "health": 2,
+        "range": 2,
+        "urge" : 1
+    },
+    "ep" : {
+        "position" : "K3",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "ea" : {
+        "position" : "B5",
+        "health": 2,
+        "range": 2,
+        "urge" : 0
+    },
+    "rx" : {
+        "position" : "D5",
+        "health": 3,
+        "range": 2,
+        "urge" : 0
+    },
+    "lr" : {
+        "position" : "H7",
+        "health": 3,
+        "range": 2,
+        "urge" : 0
+    },
+    "lg" : {
+        "position" : "L6",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "tm" : {
+        "position" : "D7",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "sf" : {
+        "position" : "F9",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "dv" : {
+        "position" : "I8",
+        "health": 2,
+        "range": 2,
+        "urge" : 0
+    },
+    "rf" : {
+        "position" : "K9",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "jf" : {
+        "position" : "A8",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "gm" : {
+        "position" : "D10",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "gz" : {
+        "position" : "I10",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "nt" : {
+        "position" : "J10",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "as" : {
+        "position" : "D12",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "ai" : {
+        "position" : "G12",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "ab" : {
+        "position" : "J12",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "ml" : {
+        "position" : "L13",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "er" : {
+        "position" : "D15",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "sk" : {
+        "position" : "E15",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "mf" : {
+        "position" : "G15",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "gn" : {
+        "position" : "I15",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "gl" : {
+        "position" : "D16",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "gc" : {
+        "position" : "F17",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "ag" : {
+        "position" : "H17",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "gb" : {
+        "position" : "L16",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    }
+}
