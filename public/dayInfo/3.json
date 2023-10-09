@@ -1,0 +1,189 @@
+{
+    "gr" : {
+        "position" : "B3",
+        "health": 2,
+        "range": 2,
+        "urge" : 2
+    },
+    "lm" : {
+        "position" : "C3",
+        "health": 3,
+        "range": 2,
+        "urge" : 2
+    },
+    "mp" : {
+        "position" : "I4",
+        "health": 3,
+        "range": 2,
+        "urge" : 0
+    },
+    "fs" : {
+        "position" : "J3",
+        "health": 2,
+        "range": 2,
+        "urge" : 1
+    },
+    "mt" : {
+        "deathDay" : 2,
+        "deathPosition" : 1,
+        "killedBy" : ["rx"]
+    },
+    "sa" : {
+        "position" : "H5",
+        "health": 3,
+        "range": 2,
+        "urge" : 2
+    },
+    "ex" : {
+        "position" : "J4",
+        "health": 1,
+        "range": 2,
+        "urge" : 0
+    },
+    "ep" : {
+        "position" : "K3",
+        "health": 3,
+        "range": 2,
+        "urge" : 2
+    },
+    "ea" : {
+        "position" : "C4",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "rx" : {
+        "position" : "D5",
+        "health": 3,
+        "range": 2,
+        "urge" : 0
+    },
+    "lr" : {
+        "position" : "I7",
+        "health": 3,
+        "range": 2,
+        "urge" : 0
+    },
+    "lg" : {
+        "position" : "L6",
+        "health": 3,
+        "range": 2,
+        "urge" : 2
+    },
+    "tm" : {
+        "deathPosition" : 3,
+        "deathDay": 2,
+        "killedBy" : ["rx"]
+    },
+    "sf" : {
+        "position" : "G10",
+        "health": 2,
+        "range": 2,
+        "urge" : 2
+    },
+    "dv" : {
+        "deathPosition" : 2,
+        "deathDay" : 2,
+        "killedBy" : ["lr", "rf", "nt"]
+    },
+    "rf" : {
+        "position" : "J8",
+        "health": 3,
+        "range": 2,
+        "urge" : 0
+    },
+    "jf" : {
+        "position" : "B7",
+        "health": 3,
+        "range": 2,
+        "urge" : 0
+    },
+    "gm" : {
+        "position" : "E11",
+        "health": 3,
+        "range": 2,
+        "urge" : 2
+    },
+    "gz" : {
+        "position" : "H9",
+        "health": 3,
+        "range": 2,
+        "urge" : 0
+    },
+    "nt" : {
+        "position" : "J9",
+        "health": 3,
+        "range": 2,
+        "urge" : 0
+    },
+    "as" : {
+        "position" : "E12",
+        "health": 3,
+        "range": 2,
+        "urge" : 2
+    },
+    "ai" : {
+        "position" : "H11",
+        "health": 3,
+        "range": 2,
+        "urge" : 2
+    },
+    "ab" : {
+        "position" : "J13",
+        "health": 3,
+        "range": 2,
+        "urge" : 2
+    },
+    "ml" : {
+        "position" : "K13",
+        "health": 3,
+        "range": 2,
+        "urge" : 0
+    },
+    "er" : {
+        "position" : "E16",
+        "health": 4,
+        "range": 2,
+        "urge" : 0
+    },
+    "sk" : {
+        "position" : "E15",
+        "health": 3,
+        "range": 2,
+        "urge" : 2
+    },
+    "mf" : {
+        "deathPosition" : 3,
+        "deathDay" : 2,
+        "killedBy" : ["gc"]
+    },
+    "gn" : {
+        "position" : "H15",
+        "health": 3,
+        "range": 2,
+        "urge" : 0
+    },
+    "gl" : {
+        "position" : "E17",
+        "health": 3,
+        "range": 2,
+        "urge" : 0
+    },
+    "gc" : {
+        "deathDay" : 2,
+        "deathPosition" : 4,
+        "killedBy" : ["er"]
+    },
+    "ag" : {
+        "position" : "G17",
+        "health": 3,
+        "range": 2,
+        "urge" : 0
+    },
+    "gb" : {
+        "position" : "L16",
+        "health": 3,
+        "range": 2,
+        "urge" : 2
+    }
+}

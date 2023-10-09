@@ -6,6 +6,7 @@ import TankInfo from "../components/TankInfo"
 
 import tankData from '../assets/json/tankData.json'
 import config from '../assets/json/config.json'
+import DeadTanks from "../components/DeadTanks"
 
 const Table = dynamic(() => import('../components/Table'), { ssr: false })
 
@@ -44,6 +45,10 @@ function PageContent() {
     function parseContent(content) {
         const parsedContent = {}
         for (const id of Object.keys(content)) {
+            if (content[id]?.deathPosition) {
+                continue;
+            }
+
             const rawPosition = content[id]?.position || content[id].pos
             const row = alphabet.indexOf(rawPosition[0].toLowerCase())
             const column = parseInt(rawPosition.slice(1)) - 1
@@ -57,6 +62,48 @@ function PageContent() {
         }
 
         return parsedContent
+    }
+
+    function parseDead(content) {
+        const deadDict = {}
+        for (let id of Object.keys(content)) {
+            if (!content[id]?.deathPosition) {
+                continue;
+            }
+
+            const deathPosition = parseInt(content[id]?.deathPosition)
+
+            if (!deadDict[deathPosition]) {
+                deadDict[deathPosition] = []
+            }
+
+            const tank = {
+                id,
+                deathPosition,
+                deathDay : content[id]?.deathDay,
+                killedBy : content[id]?.killedBy,
+                ...tankData[id]
+            }
+
+            deadDict[deathPosition].push(tank)
+        }
+
+
+        const deadList = []
+
+        for (const position of Object.keys(deadDict).sort()) {
+            const deadInThatPosition = deadDict[position]
+
+            deadInThatPosition.sort((a, b) => a.id - b.id)
+
+            for (const tank of deadInThatPosition) {
+                tank.exAequo = deadInThatPosition.length > 1
+            }
+
+            deadList.push(deadInThatPosition)
+        }
+    
+        return deadList;
     }
 
     // The day display must be on the right
@@ -85,7 +132,7 @@ function PageContent() {
             </p>
             {error ? <p>{error}</p> :
                 <>
-                    <p className="info centerText">Selezionare un carro armato per visualizzare più informazioni</p>
+                    <p className="info centerText">Selezionare un carro armato per più informazioni</p>
                     <Table suppressHydrationWarning
                         width={width}
                         height={height} 
@@ -94,7 +141,8 @@ function PageContent() {
 
                         fontSize={`max(${(15 / (height+1))}vh, ${(20 / (width+1))}vw)`}
                     />
-                    <TankInfo tank={displayedTank} setTank={setDisplayedTank} />
+                    <DeadTanks deadList={parseDead(dayInfo)} setDisplayedTank={setDisplayedTank} />
+                    <TankInfo tank={displayedTank} setTank={setDisplayedTank} tankData={tankData} />
                 </>
             }
             
