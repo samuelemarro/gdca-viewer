@@ -1,27 +1,26 @@
 {
     "gr" : {
         "position" : "B3",
-        "health": 2,
-        "range": 2,
-        "urge" : 2
+        "health": 3,
+        "range": 3,
+        "urge" : 3
     },
     "lm" : {
         "position" : "C3",
         "health": 3,
-        "range": 2,
-        "urge" : 2
+        "range": 3,
+        "urge" : 3
     },
     "mp" : {
-        "position" : "I4",
+        "position" : "H3",
         "health": 3,
         "range": 2,
-        "urge" : 0
+        "urge" : 1
     },
     "fs" : {
-        "position" : "J3",
-        "health": 2,
-        "range": 2,
-        "urge" : 1
+        "deathDay" : 3,
+        "deathPosition" : 6,
+        "killedBy" : ["ep"]
     },
     "mt" : {
         "deathDay" : 2,
@@ -29,46 +28,45 @@
         "killedBy" : ["rx"]
     },
     "sa" : {
-        "position" : "H5",
-        "health": 3,
+        "position" : "I5",
+        "health": 2,
         "range": 2,
-        "urge" : 2
+        "urge" : 3
     },
     "ex" : {
-        "position" : "J4",
-        "health": 1,
+        "deathDay" : 3,
+        "deathPosition" : 5,
+        "killedBy" : ["fs"]
+    },
+    "ep" : {
+        "position" : "I2",
+        "health": 3,
         "range": 2,
         "urge" : 0
     },
-    "ep" : {
-        "position" : "K3",
-        "health": 3,
+    "ea" : {
+        "position" : "C4",
+        "health": 2,
         "range": 2,
         "urge" : 2
     },
-    "ea" : {
-        "position" : "C4",
+    "rx" : {
+        "position" : "E6",
         "health": 3,
         "range": 2,
         "urge" : 1
     },
-    "rx" : {
-        "position" : "D5",
-        "health": 3,
-        "range": 2,
-        "urge" : 0
-    },
     "lr" : {
-        "position" : "I7",
+        "position" : "G9",
         "health": 3,
         "range": 2,
-        "urge" : 0
+        "urge" : 1
     },
     "lg" : {
         "position" : "L6",
         "health": 3,
-        "range": 2,
-        "urge" : 2
+        "range": 3,
+        "urge" : 3
     },
     "tm" : {
         "deathPosition" : 3,
@@ -76,10 +74,9 @@
         "killedBy" : ["rx"]
     },
     "sf" : {
-        "position" : "G10",
-        "health": 2,
-        "range": 2,
-        "urge" : 2
+        "deathPosition" : 6,
+        "deathDay" : 3,
+        "killedBy" : ["as", "gm"]
     },
     "dv" : {
         "deathPosition" : 2,
@@ -87,52 +84,52 @@
         "killedBy" : ["lr", "rf", "nt"]
     },
     "rf" : {
-        "position" : "J8",
+        "position" : "I9",
         "health": 3,
         "range": 2,
-        "urge" : 0
+        "urge" : 1
     },
     "jf" : {
-        "position" : "B7",
+        "position" : "C6",
         "health": 3,
         "range": 2,
-        "urge" : 0
+        "urge" : 1
     },
     "gm" : {
-        "position" : "E11",
+        "position" : "F10",
         "health": 3,
         "range": 2,
-        "urge" : 2
+        "urge" : 0
     },
     "gz" : {
-        "position" : "H9",
+        "position" : "I10",
         "health": 3,
         "range": 2,
-        "urge" : 0
+        "urge" : 1
     },
     "nt" : {
-        "position" : "J9",
+        "position" : "J10",
+        "health": 3,
+        "range": 2,
+        "urge" : 1
+    },
+    "as" : {
+        "position" : "F12",
         "health": 3,
         "range": 2,
         "urge" : 0
-    },
-    "as" : {
-        "position" : "E12",
-        "health": 3,
-        "range": 2,
-        "urge" : 2
     },
     "ai" : {
         "position" : "H11",
         "health": 3,
-        "range": 2,
-        "urge" : 2
+        "range": 3,
+        "urge" : 3
     },
     "ab" : {
-        "position" : "J13",
-        "health": 2,
+        "position" : "H12",
+        "health": 1,
         "range": 2,
-        "urge" : 2
+        "urge" : 3
     },
     "ml" : {
         "position" : "K13",
@@ -141,16 +138,16 @@
         "urge" : 0
     },
     "er" : {
-        "position" : "E16",
+        "position" : "D17",
         "health": 4,
         "range": 2,
-        "urge" : 0
+        "urge" : 1
     },
     "sk" : {
-        "position" : "E15",
+        "position" : "D14",
         "health": 3,
-        "range": 2,
-        "urge" : 2
+        "range": 3,
+        "urge" : 3
     },
     "mf" : {
         "deathPosition" : 3,
@@ -158,16 +155,16 @@
         "killedBy" : ["gc"]
     },
     "gn" : {
-        "position" : "H15",
+        "position" : "G14",
         "health": 3,
         "range": 2,
-        "urge" : 0
+        "urge" : 1
     },
     "gl" : {
-        "position" : "E17",
+        "position" : "D16",
         "health": 3,
         "range": 2,
-        "urge" : 0
+        "urge" : 1
     },
     "gc" : {
         "deathDay" : 2,
@@ -175,15 +172,15 @@
         "killedBy" : ["er"]
     },
     "ag" : {
-        "position" : "G17",
+        "position" : "J16",
         "health": 3,
         "range": 2,
-        "urge" : 0
+        "urge" : 1
     },
     "gb" : {
         "position" : "L16",
         "health": 3,
         "range": 2,
-        "urge" : 2
+        "urge" : 3
     }
 }
