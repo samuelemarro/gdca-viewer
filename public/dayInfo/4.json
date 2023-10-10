@@ -40,7 +40,7 @@
     },
     "ep" : {
         "position" : "I2",
-        "health": 3,
+        "health": 4,
         "range": 2,
         "urge" : 0
     },
