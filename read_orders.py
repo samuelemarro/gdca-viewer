@@ -460,9 +460,9 @@ def handle_movements(new_movements):
         
         if success:
             if TANKS[mover].has_moved:
-                TANKS[mover].ap -= 1
+                TANKS[mover].aps -= 1
                 TANKS[mover].commited_aps -= 1
-                print(f'{mover} ha già mosso, perde 1 AP e scende a {TANKS[mover].ap}')
+                print(f'{mover} ha già mosso, perde 1 AP e scende a {TANKS[mover].aps}')
             else:
                 print(f'{mover} usa il suo primo movimento')
             TANKS[mover].position = target
@@ -515,9 +515,9 @@ def handle_movements_advanced(new_movements):
         
         if success:
             if TANKS[mover].has_moved:
-                TANKS[mover].ap -= 1
+                TANKS[mover].aps -= 1
                 TANKS[mover].commited_aps -= 1
-                print(f'{mover} ha già mosso, perde 1 AP e scende a {TANKS[mover].ap}')
+                print(f'{mover} ha già mosso, perde 1 AP e scende a {TANKS[mover].aps}')
             else:
                 print(f'{mover} si muove in {target}')
             TANKS[mover].position = target
