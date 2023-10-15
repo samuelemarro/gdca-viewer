@@ -208,7 +208,7 @@ def parse_orders(text):
                         **retry_kwargs
                     )
                 )
-            elif other_args[0] in ['sk', 'skip', 'salta', 'passa']:
+            elif other_args[0] in ['sk', 'skip', 'salta', 'passa', 'pass']:
                 # Skip order
                 current_orders.append(
                     Order(
@@ -330,7 +330,7 @@ def apply_order(order, day, new_damages, new_movements):
             raise RuntimeError(f'ERRORE: target non valido per trasferimento di HP: {order.target}')
     
     elif order.type == 'upgrade_range':
-        max_range = np.ceil(day / 5) + 2
+        max_range = np.ceil((day - 1) / 5) + 2
         if TANKS[order.issuer].range >= max_range:
             print(f'FALLIMENTO: {order.issuer} ha già range al massimo')
             return False
