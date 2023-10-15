@@ -1,3 +1,9 @@
 {
-    "lastDay" : 6
+    "lastDay" : 7,
+    "scorched" : [
+        {
+            "day" : 7,
+            "thickness" : 1
+        }
+    ]
 }
