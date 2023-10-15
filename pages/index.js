@@ -72,6 +72,7 @@ function PageContent() {
             }
 
             const deathPosition = parseInt(content[id]?.deathPosition)
+            console.log('Death:', deathPosition)
 
             if (!deadDict[deathPosition]) {
                 deadDict[deathPosition] = []
@@ -91,7 +92,7 @@ function PageContent() {
 
         const deadList = []
 
-        for (const position of Object.keys(deadDict).sort()) {
+        for (const position of Object.keys(deadDict).sort((a, b) => parseInt(a) - parseInt(b))) {
             const deadInThatPosition = deadDict[position]
 
             deadInThatPosition.sort((a, b) => a.id - b.id)
