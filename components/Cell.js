@@ -1,4 +1,4 @@
-export default function Cell({ content, fontSize, setDisplayedTank }) {
+export default function Cell({ content, fontSize, setDisplayedTank, scorched }) {
     //const firstLetterOfName = content?.name?.[0] || '.'
     //const firstLetterOfSurname = content?.surname?.[0] || '.'
     return (
@@ -9,8 +9,7 @@ export default function Cell({ content, fontSize, setDisplayedTank }) {
             {content?.id ? 
             
             <a  onClick={() => setDisplayedTank(content)}>{content?.id}</a>
-            :
-            '\u00A0'
+            : (scorched ? '.' : '\u00A0')
             }
             </p>
         </td>

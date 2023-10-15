@@ -106,6 +106,17 @@ function PageContent() {
         return deadList;
     }
 
+    function currentScorchedThickness() {
+        let thickness = 0;
+        for (const thicknessData of config.scorched) {
+            if (day >= thicknessData.day && thickness < thicknessData.thickness) {
+                thickness = thicknessData.thickness;
+            }
+        }
+
+        return thickness;
+    }
+
     // The day display must be on the right
 
     const width = 17
@@ -138,6 +149,7 @@ function PageContent() {
                         height={height} 
                         content={dayInfo && parseContent(dayInfo)}
                         setDisplayedTank={setDisplayedTank}
+                        scorchedThickness={currentScorchedThickness()}
 
                         fontSize={`max(${(15 / (height+1))}vh, ${(20 / (width+1))}vw)`}
                     />
