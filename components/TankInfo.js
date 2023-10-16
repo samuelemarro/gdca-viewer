@@ -41,7 +41,7 @@ export default function TankInfo({ tank, setTank, tankData }) {
                     {
                         tank?.killedBy == 'urge' ?
                         <p className="info">
-                            Distrutto il giorno {tank?.deathDay} a causa dell'Urgio Mascolino
+                            Distrutto il giorno {tank?.deathDay} a causa dell&apos;Urgio Mascolino
                         </p> :
                         <p className="info">
                             Distrutto il giorno {tank?.deathDay} da{'\u00A0'}
