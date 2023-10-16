@@ -4,6 +4,10 @@
         {
             "day" : 7,
             "thickness" : 1
+        },
+        {
+            "day" : 8,
+            "thickness" : 2
         }
     ]
 }
