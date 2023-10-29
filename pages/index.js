@@ -24,7 +24,7 @@ function PageContent() {
     let { day } = router.query
     day = day ? parseInt(day) : config.lastDay
 
-    const [displayedTank, setDisplayedTank] = useState({})
+    const [displayedTank, setDisplayedTank] = useState(null)
 
     const [error, setError] = useState('')
 
