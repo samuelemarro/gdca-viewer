@@ -25,8 +25,6 @@ export default function Finale({tankData, finaleData, setDisplayedTank }) {
 
     parsedLosers = parsedLosers.reverse()
 
-    parsedLosers = parsedLosers.map((tank, index) => ({...tank, adjustedDeathPosition: parsedLosers.length - index}))
-
     let parsedWinners = finaleData.winners.map(getTankInfo)
 
     function getTankInfo(id) {
