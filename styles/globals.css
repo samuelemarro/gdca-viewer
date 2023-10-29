@@ -1007,3 +1007,29 @@ p, a, span, td {
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
+
+.multicol {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.multirow {
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.winners {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0.5em;
+}
+
+.winners > * {
+  margin: 0.5em;
+}

@@ -7,6 +7,7 @@ import TankInfo from "../components/TankInfo"
 import tankData from '../assets/json/tankData.json'
 import config from '../assets/json/config.json'
 import DeadTanks from "../components/DeadTanks"
+import Finale from "../components/Finale"
 
 const Table = dynamic(() => import('../components/Table'), { ssr: false })
 
@@ -66,6 +67,7 @@ function PageContent() {
 
     function parseDead(content) {
         const deadDict = {}
+
         for (let id of Object.keys(content)) {
             if (!content[id]?.deathPosition) {
                 continue;
@@ -103,6 +105,15 @@ function PageContent() {
 
             deadList.push(deadInThatPosition)
         }
+
+        let positionCounter = 1
+
+        for (const deadInThatPosition of deadList) {
+            for (const tank of deadInThatPosition) {
+                tank.adjustedDeathPosition = positionCounter
+            }
+            positionCounter += deadInThatPosition.length
+        }
     
         return deadList;
     }
@@ -116,6 +127,11 @@ function PageContent() {
         }
 
         return thickness;
+    }
+
+    function goToDay(day) {
+        router.push('?day=' + day)
+        setDisplayedTank(null)
     }
 
     // The day display must be on the right
@@ -132,29 +148,37 @@ function PageContent() {
             
             <p className="info centerText">Raytheon ACS-12 Sistema di Tracciamento Militare</p>
             <p className="info centerText">
-                {canGoLeft ? <a onClick={() => router.push('?day=1')}>{'<<'}</a> : <span>{'\u00A0\u00A0'}</span>}
+                {canGoLeft ? <a onClick={() => goToDay(1)}>{'<<'}</a> : <span>{'\u00A0\u00A0'}</span>}
                 <span>{' '}</span>
-                {canGoLeft ? <a onClick={() => router.push('?day=' + (day - 1))}>{'<'}</a> : <span>{'\u00A0\u00A0'}</span>}
+                {canGoLeft ? <a onClick={() => goToDay(day - 1)}>{'<'}</a> : <span>{'\u00A0\u00A0'}</span>}
                 <span>{' '}</span>
                 Giorno {(day < 10 ? '\u00A0' : '') + day}
                 <span>{' '}</span>
-                {canGoRight ? <a onClick={() => router.push('?day=' + (day + 1))}>{'>'}</a> : <span>{'\u00A0\u00A0'}</span>}
+                {canGoRight ? <a onClick={() => goToDay(day + 1)}>{'>'}</a> : <span>{'\u00A0\u00A0'}</span>}
                 <span>{' '}</span>
-                {canGoRight ? <a onClick={() => router.push('?day=' + config?.lastDay)}>{'>>'}</a> : <span>{'\u00A0\u00A0'}</span>}
+                {canGoRight ? <a onClick={() => goToDay(config?.lastDay)}>{'>>'}</a> : <span>{'\u00A0\u00A0'}</span>}
             </p>
             {error ? <p>{error}</p> :
                 dayInfo && <>
-                    <p className="info centerText">Selezionare un carro armato per più informazioni</p>
-                    <Table suppressHydrationWarning
-                        width={width}
-                        height={height} 
-                        content={dayInfo && parseContent(dayInfo)}
-                        setDisplayedTank={setDisplayedTank}
-                        scorchedThickness={currentScorchedThickness()}
+                    {
+                        dayInfo?.winners ?
+                        <Finale tankData={tankData} finaleData={dayInfo} setDisplayedTank={setDisplayedTank} /> 
+                        : <>
+                            <p className="info centerText">Selezionare un carro armato per più informazioni</p>
+                            <Table suppressHydrationWarning
+                                width={width}
+                                height={height} 
+                                content={dayInfo && parseContent(dayInfo)}
+                                setDisplayedTank={setDisplayedTank}
+                                scorchedThickness={currentScorchedThickness()}
 
-                        fontSize={`max(${(15 / (height+1))}vh, ${(20 / (width+1))}vw)`}
-                    />
-                    <DeadTanks deadList={parseDead(dayInfo)} setDisplayedTank={setDisplayedTank} />
+                                fontSize={`max(${(15 / (height+1))}vh, ${(20 / (width+1))}vw)`}
+                            />
+                            <DeadTanks deadList={parseDead(dayInfo)} setDisplayedTank={setDisplayedTank} />
+                        </>
+                        
+                    }
+                    
                     <TankInfo tank={displayedTank} setTank={setDisplayedTank} tankData={tankData} />
                 </>
             }

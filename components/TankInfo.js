@@ -49,16 +49,16 @@ export default function TankInfo({ tank, setTank, tankData }) {
                         </p>
                     }
                     
-                    <p className="info">Distrutto per {tank?.deathPosition}°{tank?.exAequo ? ' (ex aequo)' : ''}</p>
+                    <p className="info">Distrutto per {tank?.adjustedDeathPosition}°{tank?.exAequo ? ' (ex aequo)' : ''}</p>
                 </> :
                 <>
-                    <p className="info">
+                    {!tank?.finaleChoice && <p className="info">
                     {
                         tank?.health ?
                         'HP: ' + tank?.health :
                         '\u00A0'
                     }
-                </p>
+                    </p>}
                 <p className="info">
                     {
                         tank?.range ?
@@ -73,13 +73,23 @@ export default function TankInfo({ tank, setTank, tankData }) {
                         '\u00A0'
                     }
                 </p>
-                <p className="info">
+                {tank?.urge && <p className="info">
                     {
                         tank?.range ?
                         'Urgio: ' + (tank?.urge) :
                         '\u00A0'
                     }
+                </p>}
+                {tank?.finaleChoice &&
+                    <p className="info">
+                    Scelta finale: {tank?.finaleChoice == 'armistice' ? 'Armistizio' : 'Tradimento'}
                 </p>
+                }
+                {tank?.finalePlace &&
+                    <p className="info">
+                        Caduto valorosamente {tank?.finalePlace} ({tank?.finaleHits || 0} colpi)
+                    </p>
+                }
                 </>
             }
             
