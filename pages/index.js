@@ -28,7 +28,7 @@ function PageContent() {
 
     const [error, setError] = useState('')
 
-    const [dayInfo, setDayInfo] = useState({})
+    const [dayInfo, setDayInfo] = useState(null)
 
     useEffect(() => {
         setError('')
