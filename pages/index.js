@@ -143,7 +143,7 @@ function PageContent() {
                 {canGoRight ? <a onClick={() => router.push('?day=' + config?.lastDay)}>{'>>'}</a> : <span>{'\u00A0\u00A0'}</span>}
             </p>
             {error ? <p>{error}</p> :
-                <>
+                dayInfo && <>
                     <p className="info centerText">Selezionare un carro armato per più informazioni</p>
                     <Table suppressHydrationWarning
                         width={width}
