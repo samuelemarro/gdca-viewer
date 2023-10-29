@@ -1,12 +1,12 @@
 {
     "gr": {
-        "position": "E9",
+        "position": "F9",
         "health": 2,
         "range": 4,
         "urge": 1
     },
     "lm": {
-        "position": "F8",
+        "position": "G8",
         "health": 2,
         "range": 4,
         "urge": 1
@@ -48,7 +48,7 @@
         "deathPosition": 5
     },
     "ep": {
-        "position": "G7",
+        "position": "H7",
         "health": 2,
         "range": 3,
         "urge": 1
@@ -61,7 +61,7 @@
         "deathPosition": 8
     },
     "rx": {
-        "position": "F10",
+        "position": "G10",
         "health": 2,
         "range": 3,
         "urge": 1
